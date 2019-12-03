@@ -8,6 +8,7 @@
   //to jest model ktory mi nie dziala
   //w assetsach sa dwa, jeden glb, drugi gltf, zaden nie chce dzialac, jak podaje url ze skryptu z v-bind to tez  nie dziala
   //errory mozesz podejrzec w konsoli, mi sie wydaje ze to ten webpack swiruje, cokolwiek to jest
-  <Asset src="../assets/buggy.gltf" :scaling="[0.02, 0.02, 0.02]" :position="[-2, 0, -0.5]"></Asset>
+  <Asset src="/hammer.glb" :scaling="[0.02, 0.02, 0.02]" :position="[-2, 0, -0.5]"></Asset>
 </Scene>
 </template>
+

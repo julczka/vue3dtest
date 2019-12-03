@@ -5,6 +5,7 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
+    "start:dev": "webpack-dev-server",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
@@ -12,8 +13,12 @@
     "@babylonjs/loaders": "^4.0.3",
     "core-js": "^3.4.3",
     "gltf-webpack-loader": "^1.0.6",
+    "lottie-vuejs": "^0.3.7",
+    "lottie-web": "^5.5.10",
     "vue": "^2.6.10",
     "vue-babylonjs": "^1.0.0-beta.7",
+    "vue-lottie": "^0.2.1",
+    "vue-mouse-parallax": "^1.2.2",
     "vue-router": "^3.1.3"
   },
   "devDependencies": {
@@ -26,6 +31,9 @@
     "eslint-plugin-vue": "^5.0.0",
     "sass": "^1.23.7",
     "sass-loader": "^8.0.0",
-    "vue-template-compiler": "^2.6.10"
+    "vue-template-compiler": "^2.6.10",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.9.0"
   }
 }
