@@ -8,7 +8,6 @@
 
   <Asset src="/hammer.glb" :scaling="[0.02, 0.02, 0.02]" :position="[-2, 0, -0.5]"></Asset>
 </Scene>
-  <Asset src="/hammer.glb" :scaling="[0.02, 0.02, 0.02]" :position="[1, 0, -1]" :rotation="[0, Math.PI / 2, 0]"></Asset>
-  </Scene>
+  
 </template>
 
