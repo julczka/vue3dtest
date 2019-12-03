@@ -3,16 +3,24 @@
 <!-- <div id="container"> -->
 <parallax-container class="container">
 
- <parallax-element :parallaxStrength="50" type="rotation" tag="div" class="absolute">
-        <img src="../assets/images/Ellipse2.png" alt="">
+ <parallax-element :parallaxStrength="-50" type="rotation" tag="img" class="absolute" :src="img1">
+         
      </parallax-element>
 
-    <parallax-element :parallaxStrength="50" type="rotation" tag="div" class="absolute">
-        <img src="../assets/images/Ellipse1.png" alt="">
+    <parallax-element :parallaxStrength="50" type="rotation" tag="img" class="absolute" :src="img2">
+         
      </parallax-element>
     
- <parallax-element :parallaxStrength="50" type="rotation" tag="img" class="absolute" :scr="img1">
-        <!-- <img src="../assets/images/Giraffe2.png" alt=""> -->
+ <parallax-element :parallaxStrength="30" type="rotation" tag="img" class="absolute" :src="img3" id="kurwa">
+      
+     </parallax-element>
+
+      <parallax-element :parallaxStrength="-10" type="rotation" tag="img" class="absolute" :src="img4" id="kurwa">
+      
+     </parallax-element>
+
+      <parallax-element :parallaxStrength="20" type="rotation" tag="img" class="absolute" :src="img5" id="kurwa">
+      
      </parallax-element>
 
 </parallax-container>
@@ -38,9 +46,11 @@ export default {
   data () {
 
     return {
-      img1: require('@/assets/images/Ellipse1.png'),
-      img2: require('@/assets/images/Ellipse2.png'),
-      img3: require('@/assets/images/Giraffe2.png'),
+      img1: require('@/assets/images/1.png'),
+      img2: require('@/assets/images/2.png'),
+      img3: require('@/assets/images/3.png'),
+      img4: require('@/assets/images/4.png'),
+      img5: require('@/assets/images/5.png'),
     }
     
   }
