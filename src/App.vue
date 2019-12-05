@@ -5,6 +5,7 @@
       <router-link to="/about">About</router-link>
       <router-link to="/page">page</router-link>
       <router-link to="/page2">page2</router-link>
+      <router-link to="/page3">page3</router-link>
     </div>
     <router-view/>
   </div>
