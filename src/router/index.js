@@ -1,15 +1,16 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
-import page2 from '../views/page2.vue'
+// import page2 from '../views/page2.vue'
 Vue.use(VueRouter)
 
 const routes = [
   {
     path: '/',
     name: 'home',
-    component: Home
+    component: Home,
   },
+  
   {
     path: '/about',
     name: 'about',
@@ -21,13 +22,14 @@ const routes = [
   {
     path: '/page',
     name: 'page',
-    component: () => import(/* webpackChunkName: "about" */ '../views/page.vue')
+    component: () => import('../views/page.vue')
   },
 
   {
     path: '/page2',
     name: 'page2',
-    component: page2
+    component: () => import('../views/page2.vue')
+    //component: page2
     //component: () => import(/* webpackChunkName: "about" */ '../views/page2.vue')
   },
 

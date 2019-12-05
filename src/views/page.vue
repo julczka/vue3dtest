@@ -3,23 +3,27 @@
 <!-- <div id="container"> -->
 <parallax-container class="container">
 
- <parallax-element :parallaxStrength="-50" type="rotation" tag="img" class="absolute" :src="img1">
+ <parallax-element :parallaxStrength="-50" type="depth" tag="img" class="absolute" :src="img1">
          
      </parallax-element>
 
-    <parallax-element :parallaxStrength="50" type="rotation" tag="img" class="absolute" :src="img2">
+    <parallax-element :parallaxStrength="50" type="depth" tag="img" class="absolute" :src="img2">
          
      </parallax-element>
     
- <parallax-element :parallaxStrength="30" type="rotation" tag="img" class="absolute" :src="img3" id="kurwa">
+ <parallax-element :parallaxStrength="30" type="depth" tag="img" class="absolute" :src="img3" id="kurwa">
       
      </parallax-element>
 
-      <parallax-element :parallaxStrength="-10" type="rotation" tag="img" class="absolute" :src="img4" id="kurwa">
+      <parallax-element :parallaxStrength="-10" type="depth" tag="img" class="absolute" :src="img4" id="kurwa">
       
      </parallax-element>
 
-      <parallax-element :parallaxStrength="20" type="rotation" tag="img" class="absolute" :src="img5" id="kurwa">
+     <parallax-element :parallaxStrength="60" type="depth" tag="p" class="absolute">
+      LALALALA
+     </parallax-element>
+
+      <parallax-element :parallaxStrength="20" type="depth" tag="img" class="absolute" :src="img5" id="kurwa">
       
      </parallax-element>
 
@@ -65,6 +69,7 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
+  clip-path: polygon(0 25%, 100% 26%, 100% 71%, 0 71%);
 }
 
 .container {
